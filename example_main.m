@@ -1,5 +1,5 @@
-% Author: Paul Lathrop
-% Date last edited: 4/9/23
+% Author: Paul Lathrop, pdlathrop@gmail.com
+% Date last edited: 1/10/24
 %% Description
 % main function to initialize environment, pick an initial and final point
 % from the largest connected component, run RRT, QRRT, and parallel versions, 
@@ -12,8 +12,8 @@
 
 clearvars 
 
-max_size = .85;
-num_obs = 525;
+max_size = .85; %max obstacle size
+num_obs = 525; %number of obstacles
 
 curr_settings = Settings(2,20,0.75,20,37,1000); %settings object
 %dimension, config space size, accept solutions within radius, rand points
